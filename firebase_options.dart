@@ -41,44 +41,44 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyDCOZWz384CFVMFaH8WN-FycUprVEY5hYE',
-    appId: '1:972066253102:web:e698c7d5aab51104b3f2bf',
-    messagingSenderId: '972066253102',
+    apiKey: 'AI',
+    appId: '1:972',
+    messagingSenderId: '97',
     projectId: 'zoyaarab',
     authDomain: 'zoyaarab.firebaseapp.com',
     storageBucket: 'zoyaarab.firebasestorage.app',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyCfaRE6OfUsgU5yKv9qi-SHL6wH5Fktj7c',
-    appId: '1:972066253102:android:a451975d46decf2db3f2bf',
-    messagingSenderId: '972066253102',
+    apiKey: 'AIz',
+    appId: '1:97',
+    messagingSenderId: '97',
     projectId: 'zoyaarab',
     storageBucket: 'zoyaarab.firebasestorage.app',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyDhkun3XOmMhnOVmLkCg1G9IN_bS9WJZzA',
-    appId: '1:972066253102:ios:5ce5a27795f65d03b3f2bf',
-    messagingSenderId: '972066253102',
+    apiKey: 'AIz',
+    appId: '1:97',
+    messagingSenderId: '97',
     projectId: 'zoyaarab',
     storageBucket: 'zoyaarab.firebasestorage.app',
     iosBundleId: 'com.example.asdApp',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyDhkun3XOmMhnOVmLkCg1G9IN_bS9WJZzA',
-    appId: '1:972066253102:ios:5ce5a27795f65d03b3f2bf',
-    messagingSenderId: '972066253102',
+    apiKey: 'AIz',
+    appId: '1:97',
+    messagingSenderId: '972',
     projectId: 'zoyaarab',
     storageBucket: 'zoyaarab.firebasestorage.app',
     iosBundleId: 'com.example.asdApp',
   );
 
   static const FirebaseOptions windows = FirebaseOptions(
-    apiKey: 'AIzaSyDCOZWz384CFVMFaH8WN-FycUprVEY5hYE',
-    appId: '1:972066253102:web:31a240843debf2b7b3f2bf',
-    messagingSenderId: '972066253102',
+    apiKey: 'AIz',
+    appId: '1:9f',
+    messagingSenderId: '9',
     projectId: 'zoyaarab',
     authDomain: 'zoyaarab.firebaseapp.com',
     storageBucket: 'zoyaarab.firebasestorage.app',
