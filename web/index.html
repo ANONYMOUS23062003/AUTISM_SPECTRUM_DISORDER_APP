@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    For more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+
+    This is a placeholder for base href that will be replaced by the value of
+    the `--base-href` argument provided to `flutter build`.
+  -->
+  <base href="$FLUTTER_BASE_HREF">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+  <meta name="google-signin-client_id" content="1002180531662-qaeg5phioemosqq09ae7b070ro9k820f.apps.googleusercontent.com">
+
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="asd_app">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>asd_app</title>
+  <link rel="manifest" href="manifest.json">
+  <script>
+    function start() {
+      gapi.load('auth2', function() {
+        gapi.auth2.init({
+          client_id: '1002180531662-qaeg5phioemosqq09ae7b070ro9k820f.apps.googleusercontent.com',
+        }).then(() => {
+          console.log('Google Auth initialized');
+        });
+      });
+    }
+  </script>
+  <!-- <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
+    import { getAuth, GoogleAuthProvider, signInWithPopup } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js";
+  
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "YOUR_API_KEY",
+      authDomain: "YOUR_AUTH_DOMAIN",
+      projectId: "YOUR_PROJECT_ID",
+      storageBucket: "YOUR_STORAGE_BUCKET",
+      messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
+      appId: "YOUR_APP_ID",
+      measurementId: "YOUR_MEASUREMENT_ID",
+      clientId: "590524377954-dh5qbl5tra7cscpusih3m39uuosf8f4u.apps.googleusercontent.com" // <-- Add this line with your OAuth Client ID
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+    const provider = new GoogleAuthProvider();
+  </script> -->
+</head>
+<body>
+  <script src="flutter_bootstrap.js" async></script>
+  <script src="https://apis.google.com/js/api.js" type="text/javascript"></script>
+  <!-- <script src="https://apis.google.com/js/api.js"></script> -->
+
+<script>
+  function loadClientAndAuth() {
+    gapi.load('client:auth2', initClient);
+  }
+
+  function initClient() {
+    gapi.client.init({
+      clientId: '1002180531662-qaeg5phioemosqq09ae7b070ro9k820f.apps.googleusercontent.com',
+      scope: 'z953415@gmail.com',
+    }).then(() => {
+      // The client is ready to be used for authentication
+      // Trigger your authentication or API calls here
+    }).catch(error => {
+      console.error('Error initializing gapi client:', error);
+    });
+  }
+
+  // Load the gapi client library and initialize the auth
+  gapi.load('client:auth2', loadClientAndAuth);
+</script>
+  </body>
+  
+
+</body>
+</html>
